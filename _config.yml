@@ -1,0 +1,6 @@
+title: Linocut documentation
+description: Merchant guide for the Linocut Shopify theme.
+markdown: kramdown
+kramdown:
+  toc_levels: "2"
+  auto_ids: true

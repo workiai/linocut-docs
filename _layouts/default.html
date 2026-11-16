@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="top-bar">Documentation for the Linocut Shopify theme</div>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="{{ '/' | relative_url }}">Linocut</a>
+      <nav aria-label="Main">
+        <a href="{{ '/' | relative_url }}#1-before-you-start">Guide</a>
+        <a href="{{ '/' | relative_url }}#10-faq">FAQ</a>
+        <a href="{{ '/support/' | relative_url }}">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  {%- if page.hero == false -%}
+  <section class="hero hero--small">
+    <div class="wrap">
+      <p class="eyebrow">{{ page.eyebrow }}</p>
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.lead }}</p>
+    </div>
+  </section>
+  {%- else -%}
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Merchant guide</p>
+        <h1>Every print, at its real size, in a real frame</h1>
+        <p class="lead">How to set up Linocut: sizes and frames, room photos, the shopper's own wall, the wall composer, artist pages.</p>
+      </div>
+      <div class="hero__wall" aria-hidden="true">
+        <span class="hero__frame hero__frame--small"><span></span></span>
+        <span class="hero__frame"><span></span></span>
+        <span class="hero__frame hero__frame--wide"><span></span></span>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  <main id="content" class="wrap content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Linocut, a Shopify theme for galleries and print publishers · <a href="{{ '/support/' | relative_url }}">Support</a></p>
+    </div>
+  </footer>
+</body>
+</html>
