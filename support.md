@@ -11,6 +11,6 @@ Before you write, the [merchant guide]({{ '/' | relative_url }}) and its [FAQ]({
 
 Please include your store URL and, if you can, a screenshot of the issue.
 
-<iframe class="support-form" title="Linocut support request form" src="FORMULAIRE" loading="lazy" allowfullscreen></iframe>
+<iframe class="support-form" title="Linocut support request form" src="https://form.jotform.com/263226126943558" loading="lazy" allow="geolocation; microphone; camera" allowfullscreen></iframe>
 
-If the form does not load, open it directly: [Linocut support form](FORMULAIRE).
+If the form does not load, open it directly: [Linocut support form](https://form.jotform.com/263226126943558).
